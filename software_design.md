@@ -64,3 +64,29 @@ Solusi:
 1. Enum ini buat klass sendiri, jadi nanti ada klass JNE, TIKI, POSINDO
 2. semuanya implement interface Shipping yang punya calculate.
 3. nah, parameter shippingType, instead menggunakan enum, kita tinggal isi dengan shipping object, dan panggil calculate fungsinya.
+
+## LSP (Liskov Subtitution Principle)
+
+Barbara Liskov : "If for each object o1 of type S there is an object o2 of type T such that for all programs P defined in terms of T, the behavior of P is unchanged when o1 is subtituted of o2 then S is a subtype of T"
+
+Sederhananya **aturan untuk Hireraki Inheritance**
+
+1. Contravariant & Covariant
+Fungsi di subclass memiliki jumlah parameter dan type paramater yang sama & pengembalian nilai dari fungsi yang berada pada subclass dan parent
+2. Precondition & PostCondition
+3. Invariant
+invarian adalah penjelasan dari kondisi suatu proses yang benar, sebelum proses tersebut dimulai dan benar setelahnya.
+Intinya: asumsi dari suatu fungsi untuk proses sebelum fungsi ini dijalankan.
+4. Constraint
+Pembatasan yang ditentukan superclass terhadap perubahan keadaan sebuah objek. Contoh: Super memiliki objek dengan nilai tetap (constant), maka subclass gak boleh ubah.
+
+## ISP (Interface Segregation Principle)
+
+Tujuan: mengurangi jumlah ketergantungan class ke interface class yang tidak dibutuhkan.
+- Semacam pembuatan mixin
+
+## DIP (Dependency Inversion Principle)
+- high level module tidak boleh bergantung pada low level module. Keduanya harus berkandung pada abstraksi
+- abstraksi tidak diperbolehkan untuk bergantuk pada detail. Detail harus bergantung pada abstraksi
+
+semisal layering dalam aplikasi.
