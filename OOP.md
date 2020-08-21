@@ -26,7 +26,7 @@ Superclass -> SubClass
 ### Enscaptulation
 
 Tujuan: 
-- lebih leluasa untuk merubah nilai tanpa harus mengakses property secara langsung
+1. lebih leluasa untuk merubah nilai tanpa harus mengakses property secara langsung
 2. kode yang ada di app diringkas berdasarkan bagiannya
 
 Note: **Encaputlation bukan menyembunyikan data, tapi menyebabkan data tersembunyi**
